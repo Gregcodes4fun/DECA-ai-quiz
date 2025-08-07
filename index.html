@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DECA AI Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>DECA AI Practice Quiz</h1>
+  </header>
+
+  <main id="main-content">
+    <section id="start-screen">
+      <button id="start-btn">Begin Practice</button>
+    </section>
+
+    <section id="question-settings" class="hidden">
+      <h2>Select Number of Questions</h2>
+      <div class="options">
+        <button class="question-count" data-count="5">5</button>
+        <button class="question-count" data-count="10">10</button>
+        <button class="question-count" data-count="25">25</button>
+        <button class="question-count" data-count="50">50</button>
+        <button class="question-count" data-count="100">100</button>
+      </div>
+    </section>
+
+    <section id="quiz-screen" class="hidden">
+      <div id="question-container"></div>
+      <div class="nav-buttons">
+        <button id="prev-btn">Previous</button>
+        <button id="next-btn">Next</button>
+      </div>
+      <button id="submit-btn" class="hidden">Submit</button>
+    </section>
+
+    <section id="results-screen" class="hidden">
+      <h2>Your Results</h2>
+      <p id="score-display"></p>
+      <div id="explanations"></div>
+      <button onclick="location.reload()">Try Again</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
